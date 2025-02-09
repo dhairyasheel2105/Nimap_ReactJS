@@ -34,17 +34,19 @@ A responsive and interactive web application for displaying detailed information
 ## 📸 Screenshots  
 
 ### 🖥️ Home Page/Popular Movies:
-
+![Popular Movies](screenshots/HomePage.png) 
 ### ⭐ Top Rated Movies:
-
+![Top Rated Movies](screenshots/TopRated.png) 
 ### 🎬 Upcoming Movies:
-
+![Upcoming Movies](screenshots/Upcoming.png) 
 ### 🎭 Single Movie Details:
-
+![Single Movie Details](screenshots/MovieDetails.png) 
+**Cast:**
+![Cast](screenshots/cast.png)  
 ### 🔍 Search Functionality:
-
+![Search Functionality](screenshots/search.png) 
 ### 🔢 Pagination:
-
+![Pagination](screenshots/Pagination.png) 
 
  
 
