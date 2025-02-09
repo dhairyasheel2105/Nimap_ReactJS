@@ -46,7 +46,7 @@ A responsive and interactive web application for displaying detailed information
 ### 🔍 Search Functionality:
 ![Search Functionality](screenshots/search.png) 
 ### 🔢 Pagination:
-![Pagination](screenshots/Pagination.png) 
+![Pagination](screenshots/pagination.png) 
 
  
 
