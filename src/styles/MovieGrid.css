@@ -1,0 +1,39 @@
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .movie-card {
+    /* background-color: white; */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    color: white;
+    transition: scale 0.3s;
+    text-align: center;
+    border: 0.3px solid rgb(40, 37, 37);
+    font-family:monospace;
+  }
+  
+  .movie-card:hover{
+    scale: 1.05;
+    box-shadow: 0 0 20px rgba(44, 44, 44, 0.8);
+  }
+  
+  .movie-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .movie-card h3 {
+    margin: 10px;
+    font-size: 18px;
+  }
+  
+  .movie-card p {
+    margin: 10px;
+    font-size: 14px;
+  }

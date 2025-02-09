@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+}
+
+.app {
+  margin: 0 auto;
+}
+
+.home-page,.top-rated-page,.upcoming-page {
+  color: white;
+  padding: 0px 25px;
+}

@@ -1,0 +1,75 @@
+.movie-detail-page {
+    padding: 20px;
+    background-color: #1b1b1b;
+    color: white;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+  
+  .movie-header {
+    display: flex;
+    gap: 20px;
+    background-image: url('https://rukminim2.flixcart.com/image/1200/1200/xif0q/poster/4/z/x/small-spos8585-poster-movie-interstellar-wall-poster-sl-8585-original-imaghzwa4c7zahsz.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+
+  .poster {
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  @media screen and (max-width:720px) {
+    .poster{
+        display: none;
+    }
+    .movie-header {
+      flex-direction: column;
+    }
+  
+    .movie-header img {
+      width: 100%;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+  }
+
+  .movie-info {
+    flex: 1;
+  }
+  
+  .movie-cast {
+    margin-top: 30px;
+  }
+  
+  .cast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap: 20px;
+    margin-top: 15px;
+  }
+  
+  .cast-member:hover{
+    scale: 1.04;
+  }
+  .cast-member {
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.4s;
+  }
+  
+  .cast-img {
+    /* width: 100%; */
+    height: 300px;
+}
+  
+  .cast-name {
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  .cast-character {
+    color: #aaa;
+  }
+  
