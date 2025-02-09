@@ -1,5 +1,4 @@
-import { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { useDispatch, useSelector } from "react-redux";
 import { setSearchQuery } from "../redux/searchSlice";
 import { FaSearch } from "react-icons/fa";
@@ -15,28 +14,28 @@ const Navbar = () => {
         <Link to="/">Movie Database</Link>
       </div>
       <div className="link-nav">
-      <div className="navbar-menu">
-        <div>
-        <Link to="/">Popular</Link>
+        <div className="navbar-menu">
+          <div>
+            <Link to="/">Popular</Link>
+          </div>
+          <div>
+            <Link to="/top-rated">Top Rated</Link>
+          </div>
+          <div>
+            <Link to="/upcoming">Upcoming</Link>
+          </div>
         </div>
-        <div>
-        <Link to="/top-rated">Top Rated</Link>
+        <div className="navbar-search">
+          <div className="search-container">
+            <FaSearch className="search-icon" />
+            <input
+              type="text"
+              placeholder="Search movies..."
+              value={searchQuery}
+              onChange={(e) => dispatch(setSearchQuery(e.target.value))}
+            />
+          </div>
         </div>
-        <div>
-        <Link to="/upcoming">Upcoming</Link>
-        </div>
-      </div>
-      <div className="navbar-search">
-        <div className="search-container">
-          <FaSearch className="search-icon"/>
-        <input
-          type="text"
-          placeholder="Search movies..."
-          value={searchQuery}
-          onChange={(e) => dispatch(setSearchQuery(e.target.value))}
-        />
-        </div>        
-      </div>
       </div>
     </nav>
   );
